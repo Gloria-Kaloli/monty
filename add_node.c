@@ -2,7 +2,7 @@
 
 /**
  * add_node - function to add node
- * @head: pointer to stack 
+ * @head: pointer to stack
  * @m: value added to stack
  * Return: void
  */
