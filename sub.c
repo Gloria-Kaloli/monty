@@ -18,9 +18,9 @@ void sub_code(stack_t **head, unsigned int count)
 	if (num < 2)
 	{
 		fprintf(stderr, "L%d: can't sub, stack too short\n", count);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*head);
+		fclose(bus_.m_file);
+		free(bus_.info);
+		fr_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	temp = *head;

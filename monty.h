@@ -65,3 +65,14 @@ void pop_code(stack_t **head, unsigned int count);
 void swap_code(stack_t **head, unsigned int count);
 void add_code(stack_t **head, unsigned int count);
 void nop_code(stack_t **head, unsigned int count);
+void div_code(stack_t **head, unsigned int count);
+void mod_code(stack_t **head, unsigned int count);
+void mul_code(stack_t **head, unsigned int count);
+void pchar_code(stack_t **head, unsigned int count);
+void pstr_code(stack_t **head, unsigned int count);
+void queue_code(stack_t **head, unsigned int count);
+void rotl_code(stack_t **head,  __attribute__((unused)) unsigned int count);
+void rotr_code(stack_t **head, __attribute__((unused)) unsigned int count);
+void stack_code(stack_t **head, unsigned int count);
+void sub_code(stack_t **head, unsigned int count);
+#endif

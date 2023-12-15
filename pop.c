@@ -16,7 +16,7 @@ void pop_code(stack_t **head, unsigned int count)
 		fprintf(stderr, "L%d: can't pop an empty stack\n", count);
 		fclose(bus_.m_file);
 		free(bus_.info);
-		free_stack(*head);
+		fr_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	top = *head;

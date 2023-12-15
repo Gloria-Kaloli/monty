@@ -29,7 +29,7 @@ void push_code(stack_t **top, unsigned int count)
 	{ fprintf(stderr, "L%d: usage: push integer\n", count);
 		fclose(bus_.m_file);
 		free(bus_.info);
-		free_stack(*top);
+		fr_stack(*top);
 		exit(EXIT_FAILURE); }
 	m = atoi(bus_.arg);
 	if (bus_._flag == 0)
