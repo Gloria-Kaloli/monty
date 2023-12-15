@@ -1,1 +1,2 @@
-0x19. C - Stacks, Queues - LIFO, FIFO
+LIFO, FIFO PROJECT
+0x19. C - Stacks, Queues
