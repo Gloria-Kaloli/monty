@@ -24,8 +24,6 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 
-extern bus_z bus_;
-
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
@@ -55,6 +53,8 @@ typedef struct bus_t
 	int _flag;
 }  bus_z;
 
+extern bus_z bus_;
+
 void fr_stack(stack_t *head);
 void push_code(stack_t **top, unsigned int count);
 void add_node(stack_t **head, int m);
@@ -75,4 +75,5 @@ void rotl_code(stack_t **head,  __attribute__((unused)) unsigned int count);
 void rotr_code(stack_t **head, __attribute__((unused)) unsigned int count);
 void stack_code(stack_t **head, unsigned int count);
 void sub_code(stack_t **head, unsigned int count);
+int execute_code(char *info, stack_t **stack_, unsigned int count, FILE *file_);
 #endif

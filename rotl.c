@@ -1,4 +1,4 @@
-nclude "monty.h"
+#include "monty.h"
 
 /**
  *rotl_code- rotates the stack to the top

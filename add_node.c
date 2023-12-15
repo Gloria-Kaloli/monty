@@ -19,7 +19,7 @@ void add_node(stack_t **head, int m)
 		exit(0); }
 	if (temp)
 		temp->prev = n_node;
-	n_node->m = m;
+	n_node->n = m;
 	n_node->next = *head;
 	n_node->prev = NULL;
 	*head = n_node;

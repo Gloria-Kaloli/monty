@@ -17,7 +17,7 @@ void add_queue(stack_t **head, int m)
 	{
 		printf("Error\n");
 	}
-	n_node->m = m;
+	n_node->n = m;
 	n_node->next = NULL;
 	if (temp)
 	{

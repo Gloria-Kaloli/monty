@@ -1,4 +1,4 @@
-#include "monty.top"
+#include "monty.h"
 
 /**
  * pop_code - function that removes top element
