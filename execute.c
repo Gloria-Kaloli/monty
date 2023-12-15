@@ -46,7 +46,7 @@ int execute_code(char *info, stack_t **stack_, unsigned int count, FILE *file_)
 	}
 	if (op_c && op_st[k].opcode == NULL)
 	{ fprintf(stderr, "L%d: unknown instruction %s\n", count, op_c);
-		fclose(m_file);
+		fclose(file_);
 		free(info);
 		fr_stack(*stack_);
 		exit(EXIT_FAILURE); }

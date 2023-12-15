@@ -1,13 +1,14 @@
+#define _POSIX_C_SOURCE 200809L
+#include <stdio.h>
 #include "monty.h"
-
-bus_z bus_ = {NULL, NULL, NULL, 0};
-
 /**
- * main - code interpreter
- * @argc: number of arguments
- * @argv: monty m_file location
- * Return: 0 on success
- */
+ * * execute_code - to execute the opcode
+ * * @stack_: head linked list - stack
+ * * @count: the line counter
+ * * @file_: pointer to monty file
+ * * @info: line info
+ * * Return: void
+ * */
 
 int main(int argc, char *argv[])
 {
@@ -38,7 +39,7 @@ int main(int argc, char *argv[])
 		count++;
 		if (r_line > 0)
 		{
-			execute(info, &stack_, count, m_file);
+			execute_code(info, &stack_, count, m_file);
 		}
 		free(info);
 	}

@@ -1,5 +1,5 @@
 #include "monty.h"
-
+bus_z bus_;
 /**
  * div_code - function to divide elements
  * @head: pointer to stack
